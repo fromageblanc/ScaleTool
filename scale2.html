@@ -116,6 +116,18 @@ table#keyboard{
  border-style:solid;
  text-align:center;
 }
+input[type="radio"]{
+ display: none;
+}
+label{
+ border: #000 solid 1px;
+ background-color: #fff;
+ padding: 10px;
+ line-height: 400%;
+}
+input[type="radio"]:checked + label{
+  background-color: #999;
+}
 </style>
 
 </head>
@@ -153,47 +165,55 @@ table#keyboard{
 <div id="memo"></div>
 <br />
 <h3>Root</h3>
-<input type="radio" name="root" value="0"> C<br />
-<input type="radio" name="root" value="1"> C#<br />
-<input type="radio" name="root" value="2"> D<br />
-<input type="radio" name="root" value="3"> D#<br />
-<input type="radio" name="root" value="4"> E<br />
-<input type="radio" name="root" value="5"> F<br />
-<input type="radio" name="root" value="6"> F#<br />
-<input type="radio" name="root" value="7"> G<br />
-<input type="radio" name="root" value="8"> G#<br />
-<input type="radio" name="root" value="9"> A<br />
-<input type="radio" name="root" value="10"> A#<br />
-<input type="radio" name="root" value="11"> B<br />
+<input type="radio" id="root-0" name="root" value="0" /><label for="root-0">C</label>
+<input type="radio" id="root-1" name="root" value="1" /><label for="root-1">C#</label>
+<input type="radio" id="root-2" name="root" value="2" /><label for="root-2">D</label>
+<input type="radio" id="root-3" name="root" value="3" /><label for="root-3">D#</label>
+<input type="radio" id="root-4" name="root" value="4" /><label for="root-4">E</label>
+<input type="radio" id="root-5" name="root" value="5" /><label for="root-5">F</label>
+<input type="radio" id="root-6" name="root" value="6" /><label for="root-6">F#</label>
+<input type="radio" id="root-7" name="root" value="7" /><label for="root-7">G</label>
+<input type="radio" id="root-8" name="root" value="8" /><label for="root-8">G#</label>
+<input type="radio" id="root-9" name="root" value="9" /><label for="root-9">A</label>
+<input type="radio" id="root-10" name="root" value="10" /><label for="root-10">A#</label>
+<input type="radio" id="root-11" name="root" value="11" /><label for="root-11">B</label>
 
 <h5>Scale</h5>
-<input type="radio" name="scale" value="0"> アイオニアン(ナチュラルメジャー)スケール<br />
-<input type="radio" name="scale" value="1"> ドリアンスケール<br />
-<input type="radio" name="scale" value="2"> フリジアンスケール<br />
-<input type="radio" name="scale" value="3"> リディアンスケール<br />
-<input type="radio" name="scale" value="4"> ミクソリディアンスケール<br />
-<input type="radio" name="scale" value="5"> エオリアン(ナチュラルマイナー)スケール<br />
-<input type="radio" name="scale" value="6"> ロクリアンスケール<br />
-<input type="radio" name="scale" value="7"> オルタードスケール<br />
-<input type="radio" name="scale" value="8"> ディミニッシュスケール<br />
-<input type="radio" name="scale" value="9"> コンビネーションオブディミニッシュスケール<br />
-<input type="radio" name="scale" value="10"> ハーモニックマイナースケール<br />
-<input type="radio" name="scale" value="11"> メロディックマイナースケール<br />
-<input type="radio" name="scale" value="12"> ハーモニックマイナーパーフェクト5thビロースケール<br />
-<input type="radio" name="scale" value="13"> ホールトーンスケール<br />
-<input type="radio" name="scale" value="14"> メジャーペンタトニックスケール<br />
-<input type="radio" name="scale" value="15"> マイナーペンタトニックスケール<br />
-<input type="radio" name="scale" value="16"> ブルーノートスケール<br />
-<input type="radio" name="scale" value="17"> 琉球音階<br />
+<div>
+<input type="radio" id="scale-0" name="scale" value="0" /><label for="scale-0">アイオニアン(ナチュラルメジャー)スケール</label>
+<input type="radio" id="scale-1" name="scale" value="1" /><label for="scale-1">ドリアンスケール</label>
+<input type="radio" id="scale-2" name="scale" value="2" /><label for="scale-2">フリジアンスケール</label>
+<input type="radio" id="scale-3" name="scale" value="3" /><label for="scale-3">リディアンスケール</label>
+<input type="radio" id="scale-4" name="scale" value="4" /><label for="scale-4">ミクソリディアンスケール</label>
+<input type="radio" id="scale-5" name="scale" value="5" /><label for="scale-5">エオリアン(ナチュラルマイナー)スケール</label>
+<input type="radio" id="scale-6" name="scale" value="6" /><label for="scale-6">ロクリアンスケール</label>
+</div>
+<div>
+<input type="radio" id="scale-7" name="scale" value="7" /><label for="scale-7">オルタードスケール</label>
+<input type="radio" id="scale-8" name="scale" value="8" /><label for="scale-8">ディミニッシュスケール</label>
+<input type="radio" id="scale-9" name="scale" value="9" /><label for="scale-9">コンビネーションオブディミニッシュスケール</label>
+<input type="radio" id="scale-10" name="scale" value="10" /><label for="scale-10">ハーモニックマイナースケール</label>
+<input type="radio" id="scale-11" name="scale" value="11" /><label for="scale-11">メロディックマイナースケール</label>
+<input type="radio" id="scale-12" name="scale" value="12" /><label for="scale-12">ハーモニックマイナーパーフェクト5thビロースケール</label>
+</div>
+<div>
+
+<input type="radio" id="scale-13" name="scale" value="13" /><label for="scale-13">ホールトーンスケール</label>
+<input type="radio" id="scale-14" name="scale" value="14" /><label for="scale-14">メジャーペンタトニックスケール</label>
+<input type="radio" id="scale-15" name="scale" value="15" /><label for="scale-15">マイナーペンタトニックスケール</label>
+<input type="radio" id="scale-16" name="scale" value="16" /><label for="scale-16">ブルーノートスケール</label>
+<input type="radio" id="scale-17" name="scale" value="17" /><label for="scale-17">琉球音階</label>
+</div>
+
 <h5>Chord</h5>
-<input type="radio" name="scale" value="18"> メジャー<br />
-<input type="radio" name="scale" value="19"> マイナー(m)<br />
-<input type="radio" name="scale" value="20"> サスフォー(sus4)<br />
-<input type="radio" name="scale" value="21"> オーギュメント(aug)<br />
-<input type="radio" name="scale" value="22"> メジャーセブンス(maj7)<br />
-<input type="radio" name="scale" value="23"> マイナーセブンス(m7)<br />
-<input type="radio" name="scale" value="24"> マイナーセブンスフラッティドフィフス(m7b5)<br />
-<input type="radio" name="scale" value="25"> ディミニッシュ(dim)<br />
+<input type="radio" id="scale-18" name="scale" value="18" /><label for="scale-18">メジャー</label>
+<input type="radio" id="scale-19" name="scale" value="19" /><label for="scale-19">マイナー(m)</label>
+<input type="radio" id="scale-20" name="scale" value="20" /><label for="scale-20">サスフォー(sus4)</label>
+<input type="radio" id="scale-21" name="scale" value="21" /><label for="scale-21">オーギュメント(aug)</label>
+<input type="radio" id="scale-22" name="scale" value="22" /><label for="scale-22">メジャーセブンス(maj7)</label>
+<input type="radio" id="scale-23" name="scale" value="23" /><label for="scale-23">マイナーセブンス(m7)</label>
+<input type="radio" id="scale-24" name="scale" value="24" /><label for="scale-24">マイナーセブンスフラッティドフィフス(m7b5)</label>
+<input type="radio" id="scale-25" name="scale" value="25" /><label for="scale-25">ディミニッシュ(dim)</label>
 <br /><br />
 
 <input type="button" id="button4" value="get info"/>　
