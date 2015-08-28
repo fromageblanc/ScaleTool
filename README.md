@@ -1,2 +1,2 @@
 # ScaleTool
-javascript 
+スケールとコードを表示するＨＴＭＬツール
